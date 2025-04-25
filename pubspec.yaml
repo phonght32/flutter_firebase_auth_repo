@@ -1,5 +1,5 @@
 name: firebase_auth_repo
-description: Dart package which manages the authentication domain.
+description: Dart package which manages the flutter_firebase_auth_bloc domain.
 publish_to: none
 
 environment:

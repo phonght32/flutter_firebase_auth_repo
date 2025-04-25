@@ -15,8 +15,8 @@ class SignUpWithEmailAndPasswordFailure implements Exception {
     this.message = 'An unknown exception occurred.',
   ]);
 
-  /// Create an authentication message
-  /// from a firebase authentication exception code.
+  /// Create an flutter_firebase_auth_bloc message
+  /// from a firebase flutter_firebase_auth_bloc exception code.
   /// https://pub.dev/documentation/firebase_auth/latest/firebase_auth/FirebaseAuth/createUserWithEmailAndPassword.html
   factory SignUpWithEmailAndPasswordFailure.fromCode(String code) {
     switch (code) {
@@ -59,8 +59,8 @@ class LogInWithEmailAndPasswordFailure implements Exception {
     this.message = 'An unknown exception occurred.',
   ]);
 
-  /// Create an authentication message
-  /// from a firebase authentication exception code.
+  /// Create an flutter_firebase_auth_bloc message
+  /// from a firebase flutter_firebase_auth_bloc exception code.
   factory LogInWithEmailAndPasswordFailure.fromCode(String code) {
     switch (code) {
       case 'invalid-email':
@@ -98,8 +98,8 @@ class LogInWithGoogleFailure implements Exception {
     this.message = 'An unknown exception occurred.',
   ]);
 
-  /// Create an authentication message
-  /// from a firebase authentication exception code.
+  /// Create an flutter_firebase_auth_bloc message
+  /// from a firebase flutter_firebase_auth_bloc exception code.
   factory LogInWithGoogleFailure.fromCode(String code) {
     switch (code) {
       case 'account-exists-with-different-credential':
@@ -172,7 +172,7 @@ class FirebaseAuthRepo {
 
 
   /// Stream of [User] which will emit the current user when
-  /// the authentication state changes.
+  /// the flutter_firebase_auth_bloc state changes.
   ///
   /// Emits [User.empty] if the user is not authenticated.
   AuthUser get user {
